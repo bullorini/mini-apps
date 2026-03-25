@@ -8,7 +8,7 @@ import SecondaryButton from "./components/ui/SecondaryButton";
 import ProgressBar from "./components/ui/ProgressBar";
 import TriviaPage from "./pages/TriviaPage";
 import "./App.css";
-
+import RoulettePage from "./pages/RoulettePage";
 function AppShell({ children }) {
   const navLinkClassName = ({ isActive }) => {
     const baseClassName =
@@ -58,6 +58,7 @@ export default function App() {
           <Route path="/evento" element={<EventPage />} />
           <Route path="/trivia" element={<TriviaPage />} />
           <Route path="/juegos" element={<GamesPage />} />
+          <Route path="/ruleta" element={<RoulettePage />} />
         </Routes>
       </AppShell>
   );
